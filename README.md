@@ -29,7 +29,7 @@ The tricky thing here is that projects can have many backers and backers can
 back many projects. Neither can _belong to_ just one of the other.
 
 However, if we introduce a third class in-between Project and Backer, we can
-establish a _has-many-through_ relationship _in both directions!
+establish a _has-many-through_ relationship \_in both directions!
 
 We can call this class ProjectBacker - each instance of ProjectBacker will
 represent an association between a single backer and a single project. A
@@ -50,14 +50,14 @@ lead you to the correct relationships between your classes.
 - When a `Project` instance is initialized, it should be initialized with a title.
 
 - When a `ProjectBacker` instance is initialized, it should be initialized with a `Project` instance and a
-`Backer` instance.
+  `Backer` instance.
 
 - The `ProjectBacker` class is maintaining the relationship. It should have an `@@all` class
-variable. When an instance is initialized, it should be
-stored in this variable.
+  variable. When an instance is initialized, it should be
+  stored in this variable.
 
 - The `ProjectBacker` class should also have a class
-method `.all` that returns the `@@all` class variable.
+  method `.all` that returns the `@@all` class variable.
 
 - Once both classes have their attributes and readers set up, write an instance
   method on the Backer class called `back_project` that takes in a Project
@@ -71,7 +71,7 @@ method `.all` that returns the `@@all` class variable.
 - With `back_project` set up, the final step for the Backer class is to build an
   instance method that returns all the projects associated with _this Backer
   instance. Since Project instances are not directly associated with Backer instances, you will need to get
-  this information _through_ the ProjectBacker class.
+  this information \_through_ the ProjectBacker class.
 
 - For the Project class, write a similar method, `backers`, that returns all
   _backers_ associated with this Project instance.
