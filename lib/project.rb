@@ -20,7 +20,7 @@ class Project
 
         end
 
-        backers.map {|backer| backer.backergold9897}
+        backers.map {|backer| backer.backer}
 
     end
 
